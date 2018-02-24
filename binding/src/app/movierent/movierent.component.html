@@ -1,0 +1,107 @@
+<div >
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Movie Rental Store</a>
+        
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"role="button">CITY <span class="caret"></span>
+
+            </a>
+          
+          <ul class="dropdown-menu">
+            <li><a href="#">CHICAGO</a></li>
+            <li><a href="#">NEWYORK</a></li>
+            <li><a href="#">ATLANTA</a></li>
+          </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success"> Welcome to the Movie Rental store</button>
+    </div>
+  </div>
+  moviecode is:{{moviecode}}
+ <div  >  
+ <div >
+
+   
+ <div class="aria-live-polite">
+   <div class="slick-track" style="opacity:1;width:1630px;transform:translate3d(0px,0px,0px);">
+    <div class="banner-container slick-side slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width:161px;">
+     <a href="#" class="list-group-item clearfix" *ngFor="let movie of rent">
+       <div class="movie-card ns-card-single">
+         <div class="card-contaianer">
+           <div class="poster-container-img">
+              
+                  <div >
+                    
+                      <img src="{{movie.imagepath}}" alt="{{movie.title}}" class="img-responsive" style="max-height: 150px">
+                      <div class="poster-container">
+                        <div class="_overlay">
+                          </div>
+                        <div class="show-more-info">
+                            <div class="detail detail-scroll">
+																<div class="__name overflowEllipses">
+																	{{movie.title}}
+
+																</div>
+																
+																<div class="genre-list">
+																	<a href="#">
+                                    <div class="__rounded-box __genre">{{movie.type}}</div></a>																																		<a href="/movies/romance"><div class="__rounded-box __genre">Romance</div></a>																																	</div>
+																
+																	
+																	
+																
+															</div>
+                  
+
+                          
+
+                        </div>
+                           <p >Director:{{movie.director}}</p>
+                            <p >rating:{{movie.rating}}</p>
+                            <p >Rentalcost:{{movie.Rentalcost|currency:'USD':true}}</p>
+                           <p >Releseyear:{{movie.Yearofrelease}}</p>
+                           <p>moviecode is:{{moviecode}}</p>
+                       
+                      </div>
+                      <div class="btn btn-default"  (click)="checkstore()">
+                          <a>
+                            <div class="__container">
+                              RENT NOW
+                            </div>
+                          </a>
+                        </div>
+                        
+                  </div>
+                  
+                   
+                  
+              
+
+          </div>
+
+        </div>
+
+      </div>
+    </a>
+
+    </div>
+    </div>
+
+ </div>       
+
+ </div>
+ </div>
+
+
+ 

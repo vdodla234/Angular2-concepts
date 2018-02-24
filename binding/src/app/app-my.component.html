@@ -1,0 +1,22 @@
+<div>What is your name?</div><br>
+<p>My name is {{ myname }} <br>
+    My number is {{ myphonenumber }} <br>
+    my college name is {{ mycollege }}
+    
+</p>
+<hr>
+<p>my details {{ personal() }}</p>
+<p [innerText]="myname"
+  [style.color]="mycolor"
+  [style.backgroundcolor]="backgroundcolor"></p>
+<input type="button" value="check me!" (click)="yourname()">
+<input type="button" value="try it" (hover)="greet()"><br>
+name:<input type="text" [(ngModel)]="myname"><br>
+<input type="checkbox" name="" id="">if you dont have a middle name
+<p>Choose your favourite team?</p>
+<input type="radio"  >chelsea <br>
+<input type="radio" >Arsnel <br>
+<input type="radio"  >Manchester United <br>
+<input type="radio" >Liverpool <br>
+
+<input type="button" value="submit" (submit)="submit()">
